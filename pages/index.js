@@ -57,7 +57,7 @@ export default function Home() {
           .catch(error => console.log('error', error));
       }
       else
-        console.log(window.location.origin.replace('localhost', '127.0.0.1') + '/api/getM3u?sid=' + theUser.sid + '_' + theUser.acStatus[0] + '&id=' + theUser.id + '&sname=' + theUser.sName + '&tkn=' + token + '&ent=' + theUser.entitlements.map(x => x.pkgId).join('_'));
+        console.log(window.location.origin.replace('localhost', '127.0.0.1') + '/api/getM3u?sid=' + theUser.sid + '_' + theUser.acStatus[0] + '&id=' + theUser.id + '&sname=' + theUser.sName + '&tkn=' + token + '&ent=' + '1000000071_1000000156_1000000471_1000000500_1000000647_1000000711_1000000985_1000001051_1000001124_1000001131_1000001274_1000001296_1000001303_1000001368_1000001512_1000001573_1000001685_1000001694_1000001817_1000000001');
     }
     else
       setDynamicUrl("");
